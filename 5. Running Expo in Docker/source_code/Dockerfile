@@ -8,7 +8,7 @@ EXPOSE 19000
 EXPOSE 19001
 
 RUN apt-get update && \
-    apt-get install android-tools-adb
+    apt-get install -y android-tools-adb
 WORKDIR /app
 
 COPY package.json yarn.lock app.json ./
